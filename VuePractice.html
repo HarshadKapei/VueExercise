@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>VuePrctice</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  </head>
+  <body>
+    <!-- <div id="app">
+      <input type="text" v-on:input="sayHello" />
+      <h1>{{ title }}</h1>
+      <h1>{{ sayHello() }}-<a v-bind:href="link">Google</a></h1>
+    </div> -->
+    <!-- -------------------------------------------------------------------- -->
+    <!-- <div id="app">
+      <h1 v-html="google"></h1>
+    </div> -->
+    <!-- -------------------------------------------------------------------- -->
+    <!-- <div id="app">
+      <button v-on:click="increase">Click me</button>
+      <button v-on:click="decrease">Remove me</button>
+      <p>{{ counter }}</p>
+    </div> -->
+    <!-- ---------------------------------------------------------------------- -->
+    <!-- <div id="app">
+      <p v-on:mousemove="updateCordinate">Cordinate:{{ x }}/{{ y }}</p>
+    </div> -->
+    <!-- ---------------------------------------------------------------------- -->
+    <div id="app">
+      <input type="text" v-on:keyup.enter.space="aletMe" />
+    </div>
+    <script>
+      //   new Vue({
+      //     el: "#app",
+      //     data: {
+      //       title: "Hello World",
+      //       link: "https://www.google.com"
+      //     },
+      //     methods: {
+      //       //   changeTitle: function(event) {
+      //       //     this.title = event.target.value;
+      //       //   }
+      //       sayHello: function() {
+      //         this.title = "Hello";
+      //         return this.title;
+      //       }
+      //     }
+      //   });
+      // --------------------------------------------------------------------------------
+      //   new Vue({
+      //     el: "#app",
+      //     data: {
+      //       google: '<a href="http://google.com">Google</a>'
+      //     }
+      //   });
+      // ---------------------------------------------------------------------------------
+      //   new Vue({
+      //     el: "#app",
+      //     data: {
+      //       counter: 0
+      //     },
+      //     methods: {
+      //       increase: function() {
+      //         this.counter++;
+      //       },
+      //       decrease: function() {
+      //         if (this.counter > 0) {
+      //           this.counter--;
+      //         }
+      //       }
+      //     }
+      //   });
+      //   ------------------------------------------------------------------------------
+      // new Vue({
+      //     el:"#app",
+      //     data:{
+      //         x=0,
+      //         y=0
+      //     },
+      //     methods:{
+      //     updateCordinate:function(event){
+      //     this.x=event.clientX;
+      //     this.y=event.clientY;
+      //  }
+      //     }
+      // });
+      // ---------------------------------------------------------------------------------
+      new Vue({
+        el: "#app",
+        methods: {
+          aletMe: function() {
+            alert("hiiiiiiiii");
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
